@@ -1,0 +1,260 @@
+/*
+	for index.html
+*/
+html {
+	background-color: #fff;
+	font: 1em "Microsoft YaHei", SimSun;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-animation: breath 2s linear infinite;
+	-moz-animation: breath 2s linear infinite;
+	-ms-animation: breath 2s linear infinite;
+	-o-animation: breath 2s linear infinite;
+	animation: breath 2s linear infinite;
+}
+
+@-webkit-keyframes breath {
+    from { 
+       	-webkit-box-shadow: inset 0 0 1em purple;
+    }
+    50% { 
+        -webkit-box-shadow: inset 0 0 4em purple;
+    }
+    to { 
+        -webkit-box-shadow: inset 0 0 1em purple;
+    }
+}
+@-moz-keyframes breath {
+    from { 
+       	-moz-box-shadow: inset 0 0 1em purple;
+    }
+    50% { 
+        -moz-box-shadow: inset 0 0 4em purple;
+    }
+    to { 
+        -moz-box-shadow: inset 0 0 1em purple;
+    }
+}
+@-ms-keyframes breath {
+    from { 
+       	-ms-box-shadow: inset 0 0 1em purple;
+    }
+    50% { 
+        -ms-box-shadow: inset 0 0 4em purple;
+    }
+    to { 
+        -ms-box-shadow: inset 0 0 1em purple;
+    }
+}
+@-o-keyframes breath {
+    from { 
+       	-o-box-shadow: inset 0 0 1em purple;
+    }
+    50% { 
+        -o-box-shadow: inset 0 0 4em purple;
+    }
+    to { 
+        -o-box-shadow: inset 0 0 1em purple;
+    }
+}
+@keyframes breath {
+    from { 
+       	box-shadow: inset 0 0 1em purple;
+    }
+    50% { 
+        box-shadow: inset 0 0 4em purple;
+    }
+    to { 
+        box-shadow: inset 0 0 1em purple;
+    }
+}
+
+@font-face {
+    font-family: diamond;
+    src: url('../fonts/diamond.ttf'), url('../fonts/diamond.eot'); /* IE9+ */
+}
+
+h1 {
+	font: 5em  diamond, "STXingkai";
+	text-shadow: 0 2px 10px purple;
+	
+}
+
+h2 {
+	font-size: 3em;
+}
+
+@font-face {
+    font-family: AlexBrush-Regular;
+    src: url('../fonts/AlexBrush-Regular.ttf'), url('../fonts/AlexBrush-Regular.eot'); /* IE9+ */
+}
+
+#container {
+	margin: 0 auto;
+	margin-top: 5em;
+	width: 80%;
+	min-width: 96em;
+}
+#container > div {
+	margin: 2em;
+	border-radius: 1.5em;
+	background-color: #ddf;
+}
+#container > div > ul {
+	margin: 2em;
+	padding: 2em;
+}
+
+#myself li {
+	padding: 2em;
+}
+
+/* home town */
+#hometown ul span {
+	display: inline-block;
+	font-size: 2.4em;
+	cursor: pointer;
+	width: 4.5em;
+	text-align: center; 
+    background-image: -webkit-linear-gradient(top, #EEE 0%, #CCC 50%, #EEE 100%); 
+    background-image: -moz-linear-gradient(top, #EEE 0%, #CCC 50%, #EEE 100%);
+    background-image: -ms-linear-gradient(top, #EEE 0%, #CCC 50%, #EEE 100%);
+    background-image: -o-linear-gradient(top, #EEE 0%, #CCC 50%, #EEE 100%);
+    background-image: linear-gradient(top, #EEE 0%, #CCC 50%, #EEE 100%);
+    /* border-radius: 5px; */
+    margin-right: 1px;
+    
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    -o-transition: -moz-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    
+}
+#hometown ul span:hover {
+	-webkit-box-shadow: inset 0 0 10px orange;
+    -moz-box-shadow: inset 0 0 10px orange;
+    -ms-box-shadow: inset 0 0 10px orange;
+    -o-box-shadow: inset 0 0 10px orange;
+    box-shadow: inset 0 0 10px orange;
+    
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+}
+/* when hover the tabs of the views 
+@-webkit-keyframes views {
+    from { 
+       	-webkit-transform: rotate(0deg);
+    }
+    50% { 
+        -webkit-transform: rotate(180deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+*/
+
+#hometown li {
+	display: none;
+	padding: 2em;
+}
+#hometown li.elephant {
+	display: block;
+}
+#myself li.character, #hometown li.elephant, #hometown li.paper-cut, #hometown li.shimenshan, #myself li.hobby, #blessing p  {
+	overflow: hidden;
+    clear: both;
+}
+
+/* for every p */
+#hometown li.elephant p,  #hometown li.paper-cut p, #hometown li.shimenshan p, #myself li.hobby p, #myself li.character p, #hope p, #blessing p {
+	font-size: 2em;
+	text-indent: 2em;
+	margin-bottom: 1em;
+}
+#hometown li.elephant p:first-letter,  #hometown li.paper-cut p:first-letter, #hometown li.shimenshan p:first-letter, #myself li.hobby p:first-letter, #myself li.character p:first-letter /*, #hope p:first-letter */{
+	font-size: 2em;
+}
+
+
+#myself li.character img, #hometown li.elephant img, #hometown li.paper-cut img, #hometown li.shimenshan img, #myself li.hobby img, #blessing img {
+	float: left;
+	/* display: inline-table; 
+	margin-right: 3em;
+	margin-bottom: 3em;
+	*/
+	margin: 3em;
+	-webkit-box-shadow: 0 0 5px 5px purple;
+	-moz-box-shadow: 0 0 5px 5px purple;
+	-ms-box-shadow: 0 0 5px 5px purple;
+	-o-box-shadow: 0 0 5px 5px purple;
+	box-shadow: 0 0 5px 5px purple;
+}
+#myself li.character img {
+	margin: 3em;
+	float: none;
+}
+/*
+#myself li.character img:after, #hometown li.elephant img:after, #hometown li.paper-cut img:after, #hometown li.shimenshan img:after, #myself li.hobby img:after {
+	content:"";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+
+}
+*/
+/* 当前风景Tab样式 */
+.currView {
+	color: orange;
+	-webkit-box-shadow: inset 0 0 1em orange;
+    -moz-box-shadow: inset 0 0 1em orange;
+    -ms-box-shadow: inset 0 0 1em orange;
+    -o-box-shadow: inset 0 0 1em orange;
+    box-shadow: inset 0 0 1em orange;
+}
+
+#hope {
+	padding: 2em;
+	background: #ddf url(../img/love-life1.jpg) no-repeat scroll left top;
+	background-size: cover;
+	color: white;
+	
+	display: none;
+}
+#blessing {
+	padding: 2em;
+	display: none;
+}
+#blessing p {
+	margin: 1em;
+}
+
+#hope h1, #blessing h1 {
+	text-align: center;
+}
+#hope div.love-life, #blessing div {
+	position: relative;
+	margin-left: 60%;
+}
+#hope div.love-life p {
+	text-indent: 1em;
+}
+#hope div.love-life p:hover {
+	font-size: 2em;
+	cursor: pointer;
+	background-image: -webkit-linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%); 
+    background-image: -moz-linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%);
+    background-image: -ms-linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%);
+    background-image: -o-linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%);
+    background-image: linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%);
+}
+.hope-hover {
+	background-image: -webkit-linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%); 
+    background-image: -moz-linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%);
+    background-image: -ms-linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%);
+    background-image: -o-linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%);
+    background-image: linear-gradient(top, #fff 0%, rgba(0, 0, 255, 0.5) 50%, #fff 100%);
+}
+
