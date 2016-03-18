@@ -1,5 +1,5 @@
 # first speech
 ## this is my first speech with a html file.
 ### welcome to make friends with me
-- my sina weibo is :    http://weibo.com/loveofbutterfly
-- my tencent weibo is : http://t.qq.com/dnv__ _
+
+visit it on: http://butterfly5211314.github.io/first-speech/
